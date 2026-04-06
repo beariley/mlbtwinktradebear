@@ -1,6 +1,9 @@
 <link rel="stylesheet" href="style.css">
+
 <body style="background-color: #ede0d6; margin: 5%;">
     <script>
+        window.onload = newPlayer()
+
         function update(type) {
             let count = document.getElementById(type + "Count");
             let newcount = parseInt(count.textContent) + 1
@@ -32,9 +35,8 @@
     <span id="tradeCounter"> trade count: </span>
     <span id="tradeCount">0</span> <br>
 
-    <img id="image" style="height: 60%;"
-        src=https://img.mlbstatic.com/mlb-photos/image/upload/w_213,d_people:generic:headshot:silo:current.png,q_auto:best,f_auto/v1/people/444482/headshot/67/current>
-    <p id="output" style="color: darkblue; "> "David Peralta" </p>
+    <img id="image" style="height: 60%;">
+    <p id="output" style="color: darkblue; "></p>
 
     <button onclick="update('twink');">twink</button>
     <button onclick="update('bear');">bear</button>
